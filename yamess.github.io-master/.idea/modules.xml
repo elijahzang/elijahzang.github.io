@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/../yamess.github.io/.idea/portfolio.iml" filepath="$PROJECT_DIR$/../yamess.github.io/.idea/portfolio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/responsive_portofolio.iml" filepath="$PROJECT_DIR$/.idea/responsive_portofolio.iml" />
-    </modules>
-  </component>
-</project>
