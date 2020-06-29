@@ -1,507 +1,1157 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
+
+		<!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/style.css">
+		<!-- Title -->
+		<title>Baha - Personal Portfolio Template</title>
 
-        <title>ianalytik Documentation</title>
+		<!-- CSS Plugins -->
+        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+        <link rel="stylesheet" href="css/plugins/font-awesome.css">
+		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
+		<link rel="stylesheet" href="css/plugins/simplebar.css">
+		<link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css">
+
+		<!-- CSS Base -->
+        <link rel="stylesheet" href="css/style-dark.css">
+
+		<!-- Settings Style -->
+		<link rel="stylesheet" href="css/settings/left-nav.css" />
+		<link rel="stylesheet" href="css/settings/box/box.css">
+		<link rel="stylesheet" href="css/settings/box/circle.css" />
+		<link rel="stylesheet" href="css/settings/title/title.css">
+		<link rel="stylesheet" href="css/settings/color/green-color.css" />
+
     </head>
     <body>
 
-        <!--Main menu-->
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="content col text-center">
-                        <div class="title">
-    						<i class="fas fa-file-alt"></i> Documentation
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Main menu-->
-
-        <!--Documentation Start-->
-        <div class="documentation container">
-            <div class="row">
-                <div class="col-md-3 d-md-block d-none">
-                    <nav class="sidebar">
-                        <ul>
-                            <li><a class="active" href="#intro">Intro</a></li>
-                            <li><a href="#project">Project Structure</a></li>
-                            <li><a href="#html">HTML Structure</a></li>
-                            <li><a href="#css">CSS Structure</a></li>
-                            <li><a href="#js">JavaScript Structure</a></li>
-                            <li><a href="#fonts">Fonts</a></li>
-                            <li><a href="#source">Sources</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-9">
-                    <div class="content">
-
-                        <div id="intro" class="main">
-                            <h1>ianalytik</h1>
-                            <hr>
-							<p class="thanks">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form in themeforest.net. Thanks so much!</p>
-							<hr>
-                            <ul>
-                                <li>Author: <a href="https://themeforest.net/user/malyarchuk">Malyarchuk</a></li>
-								<li>Created: 20.06.2019</li>
-                            </ul>
-                            <hr>
-                        </div>
-
-                        <div id="project" class="main">
-                            <h2 id="projectstructure">Project Structure</h2>
-                            <p>Template has the following project structure:</p>
-                            <div class="file-tree">
-                                <ul>
-                                    <li><i class="far fa-folder" aria-hidden="true"></i>documentation</li>
-                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>html
-                                        <ul>
-                                            <li><i class="far fa-folder" aria-hidden="true"></i>css</li>
-                                            <li><i class="far fa-folder" aria-hidden="true"></i>fonts</li>
-                                            <li><i class="far fa-folder" aria-hidden="true"></i>img</li>
-                                            <li><i class="far fa-folder" aria-hidden="true"></i>js</li>
-                                            <li><i class="far fa-file-code" aria-hidden="true"></i>index-*.html</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>single-blog.html</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="html" class="main">
-                            <h2 id="htmlstructure">HTML Structure</h2>
-                            <p>Html-files use <b>UTF-8</b> codepage. Use the editor with <b>UTF-8</b> support to avoid problems with unreadable symbols.</p>
-
-                            <h3>Head</h3>
-
-                            <p><b>&lt;title&gt;</b> tag: Is the title of your website</p>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;title&gt;Website Name&lt;/title&gt; </code></pre>
-
-                            <p><b>&lt;link&gt;</b> tags: These tags contains Css Structure for appearance</p>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;link rel="stylesheet" href="css/*.css" &gt; </code></pre>
-							<p><b>&lt;style.css&gt;</b> contains the basic structure of the site</p>
-
-							<br><hr>
-                            <h3>Body</h3>
-                            <p><b>&lt;body&gt;</b> tag contains the main website which users can view.</p>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;body&gt;
-    &lt;!-- Website Sections Area --&gt;
-&lt;/body&gt;</code></pre>
-
-							<br><hr>
-                            <h3>Home Section</h3>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="pt-home" style="background-image: url('img/home-bg.jpg')"&gt;
-    &lt;!-- Section content --&gt;
-&lt;/div&gt;</code></pre>
-							
-							<p>To change the main picture of the site, upload your picture to the <b>img</b> folder and name 'home-bg.jpg'</p>
-							
-							<h4>Menu</h4>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;nav class="header-main"&gt;
-    &lt;div class="logo"&gt;
-        &lt;!-- Logo Image --&gt;
-    &lt;/div&gt;
-				
-    &lt;ul&gt;
-        &lt;!-- Navigation Menu --&gt;
-    &lt;/ul&gt;
-				
-    &lt;a class="music-bg"&gt;
-        &lt;!-- Music Line --&gt;
-    &lt;/a&gt;
-&lt;/nav&gt;</code></pre>
-							
-							<h4>Banner</h4>
-							
-<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="banner"&gt;
-    &lt;h1&gt;&lt;!-- Your Name --&gt;&lt;/h1&gt;			
-    &lt;p class="cd-headline rotate-1"&gt;
-        &lt;!-- Your information --&gt;
-    &lt;/p&gt;
-&lt;/div&gt;</code></pre>
-							
-							<h4>Social icons</h4>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="social"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;!-- Other Links --&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-
-							<br><hr>
-                            <h3>About Section</h3>
-                            <p>This section contains the introduction, personal information, video presentation, services, testimonials, price sections.</p><br>
-							<p class="alert alert-danger"><b>User Photo:</b> should of 400x400 resolution.</p>
-
-                            <h4>Interests</h4>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="inter-icon"&gt;
-    &lt;i class="fas fa-route"&gt;&lt;/i&gt;
-    &lt;div class="desc-inter"&gt;
-        &lt;h6&gt;&lt;!-- You Interes --&gt;&lt;/h6&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-							
-							<h4>Services</h4>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="service box"&gt;
-    &lt;i class="fas fa-*"&gt;&lt;/i&gt;
-    &lt;h4&gt;&lt;!-- Service title --&gt;&lt;/h4&gt;
-    &lt;p&gt;&lt;!-- Description --&gt;&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-
-
-
-							<h4>Testimonials Section</h4>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="testimonial-item box"&gt;
-   &lt;div class="media"&gt;
-        &lt;img src="img/testimonials/testimonial-*.jpg" alt=""&gt;
-        &lt;div class="content"&gt;
-            &lt;h4&gt;&lt;!-- User Name --&gt;&lt;/h4&gt;
-            &lt;p&gt;&lt;!-- Profession --&gt;&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;ul class="rating"&gt;
-        &lt;li&gt;&lt;i class="far fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class="comment"&gt;
-        &lt;p&gt;&lt;!-- Comment --&gt;&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-							
-							<p><b>Testimonial photo:</b> should of 80x80 resolution.</p>
-						
-							<h4>Price Section</h4>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="price box"&gt;
-    &lt;div class="head-price"&gt;
-        &lt;i class="fa fa-*"&gt;&lt;/i&gt;
-        &lt;h4&gt;&lt;!-- Your Title --&gt;&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="body-price"&gt;
-        &lt;div class="price-plan"&gt;
-            &lt;span class="number"&gt;&lt;!-- Your Price --&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="list-price"&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;!-- Your Сondition --&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-							
-							<br><hr>
-							<h3>Resume Section</h3>
-							<p>This section contains the experience&amp;eduction, skills, work process.</p>
-
-							<h4>Experience &amp; Eduction</h4>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="item"&gt;
-    &lt;div class="main"&gt;
-        &lt;h4&gt;&lt;!--Course or Position--&gt;&lt;/h4&gt;
-        &lt;p&gt;&lt;i class="far fa-calendar-alt"&gt;&lt;/i&gt;&lt;!-- Year from/till --&gt; | &lt;!-- School or Company Name --&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;p&gt;&lt;!-- Description --&gt;&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-							
-							<h4>Skill Item</h4>
-
-							<p><b>Linear skills.</b></p>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="skill-item"&gt;
-    &lt;h4 class="progress-title"&gt;&lt;!-- Name Skill --&gt;&lt;/h4&gt;
-    &lt;div class="progress"&gt;
-        &lt;div class="progress-bar" style="width:98%"&gt;&lt;!-- 'width' is the experience you gained --&gt;
-            &lt;div class="progress-value"&gt;98%&lt;/div&gt;&lt;!-- Should edit it the same as above attribute 'width' --&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-							
-							<p><b>Round skills.</b></p>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="chart" data-percent="80"&gt; 80% &lt;p&gt;&lt;!-- Name Skill --&gt;&lt;/p&gt;&lt;/div&gt;</code></pre>
-							
-							<p><b>'data-percent'</b> is the experience you gained</p>
-							<p class="alert alert-danger"><b>Note:</b> Numbers must be identical.</p>
-						
-							<h4>Work Process Item</h4>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;!-- Working Process Item --&gt;
-&lt;div class="single-wp width-sm process-*"&gt;
-    &lt;p class="wp-step"&gt;&lt;!-- Number Process-- &gt;&lt;/p&gt;
-    &lt;h4 class="wp-title"&gt;&lt;!-- Title Process-- &gt;&lt;/h4&gt;
-    &lt;p&gt;&lt;!-- Description Process-- &gt;&lt;/p&gt;
-&lt;/div&gt;
-							
-&lt;!-- Working Process Circle--&gt;
-&lt;div class="wp-circle"&gt;
-    &lt;h4&gt;&lt;!--Name Process--&gt;&lt;/h4&gt;
-    &lt;span class="dots top-l"&gt;&lt;/span&gt;&lt;!-- Dot in the upper left --&gt;
-    &lt;span class="dots bottom-l"&gt;&lt;/span&gt;&lt;!-- Dot in the lower left --&gt;
-    &lt;span class="dots top-r"&gt;&lt;/span&gt;&lt;!-- Dot in the upper right --&gt;
-    &lt;span class="dots bottom-r"&gt;&lt;/span&gt;&lt;!-- Dot in the lower right --&gt;
-&lt;/div&gt;</code></pre>
-
-							<br><hr>
-                            <h3>Portfolio Section</h3>
-                            <p>This section contains the portfolio's items.</p>
-
-							<p>Portfolio Section have two parts: </p>
-                            <ul>
-                                <li><b>Portfolio filters</b></li>
-                                <li><b>Portfolio item</b></li>
-							</ul>
-
-                            <h4>Portfolio Filters</h4>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;ul&gt;
-    &lt;li class="active" data-filter="*"&gt;All&lt;/li&gt;
-    &lt;li data-filter=".brand"&gt;Brand&lt;/li&gt;
-    &lt;li data-filter=".design"&gt;Design&lt;/li&gt;
-    &lt;li data-filter=".graphic"&gt;Graphic&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-
-                            <p>Portfolio filters are the list item when clicked it will show portfolios related to those category.<br>
-                            <b>data-filter</b> : attribute specify the category the portfolios belongs to. It can have any value but thing to notice is that the value starts with <b>".value"</b>.</p>
-
-
-                            <h4>Portfolio Item</h4>
-
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;figure&gt;
-    &lt;img alt="" src="img/portfolio/img-*.jpg"&gt;
-    &lt;figcaption&gt;
-        &lt;h3&gt;&lt;!-- Project Name --&gt;&lt;/h3&gt;
-        &lt;p&gt;&lt;!-- Category --&gt;&lt;/p&gt;&lt;i class="fas fa-*"&gt;&lt;/i&gt;
-        &lt;a class="image-link" href="img/portfolio/img-*.jpg"&gt;&lt;/a&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-
-                            <p>Portfolio item is contain inside <b>&lt;div&gt;</b> tag. It have class attribute which value are item and <b>brand</b>, <b>item</b> is used for styling the portfolio single item and <b>brand</b> is used to show which category the item belongs to in respect to the filter.<br><br>
-                            Portfolio item has inside anchor tag. This tag has <b>class</b> and <b>href</b> attribute. The <b>class</b> attribute specify
-                            that the link is of image type. There are <b>2</b> possible values:</p>
-
-                            <ul>
-                                <li><b>image-link</b> : This tells the scripts to show as image type and will show as popup when click.</li>
-                                <li><b>video-link</b> : This tells the scripts to show as video type and will show as popup when click.</li>
-                            </ul>
-
-							<br><hr>
-                            <h3>Blog Section</h3>
-
-                            <p>This section contains the blog items.</p>
-
-                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="blog-item"&gt;
-    &lt;div class="thumbnail"&gt;
-        &lt;a href="single-blog.html"&gt;&lt;img alt="" src="img/blog/img-*.jpg"&gt;&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;h4&gt;&lt;a href="single-blog.html"&gt;&lt;!-- You Name --&gt;&lt;/a&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;!-- Date --&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;!-- Category --&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-
-                            <p><b>Blog</b> item when click will open the link related to that blog item for example <b>single-blog.html</b> page.</p>
-
-							<br><hr>
-                            <h3>Contact Section</h3>
-
-                            <p>This section contains contact form, contact info, google map.</p>
-
-                            <p><b>Contact Form</b>: Form contains the form fields for the user to send message. Form is based on ajax when submit the form will run the <b>mail.php</b> file. If everything is valid the mail will be send to the person whose email is specified in <b>mail.php</b> file.</p>
-							<p class="alert alert-danger"><b>Note:</b> Edit this line in <b>mail.php</b></p>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">$to = "you-email@example.com"; &lt;!-- Change the email to your email id --&gt;</code></pre>
-							
-							<p><b>Google Map:</b> Enter the latitude and longitude of your location.</p>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="map" data-latitude="&lt;!-- Your Latitude-- &gt;" data-longitude="&lt;!-- Your Longitude --&gt;" data-zoom="14"&gt;&lt;/div&gt;</code></pre>
-							
-							<br><hr>
-                            <h3>Elements Css</h3>
-							
-							<p>This section contains preloader, tooltip, music.</p>
-							
-							<h4>YouTube Video</h4>
-							
-							<p>To change the background music, change the link to it:</p>
-							<p class="alert alert-danger"><b>Note:</b> In the file <b>main.js</b>, find the line and insert your link:</p>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">$('body').append('&lt;audio loop autoplay volume="0" id="audio-player"&gt;&lt;source src="&lt;!-- You Link --&gt;" type="audio/mpeg"&gt;&lt;/audio&gt;');</code></pre>
-							
-							<h4>Preloader</h4>
-							
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="preloader"&gt;
-    &lt;div class="loading-area"&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="left-side"&gt;&lt;/div&gt;
-    &lt;div class="right-side"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-							<p>In the span lines, specify your letters.</p>
-							
-							<h4>Tooltip</h4>
-							
-							<p>To install the tooltip, paste this line where you want it to appear:</p>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">data-tooltip="&lt;!-- Information --&gt;" data-position="&lt;!-- Position --&gt;"</code></pre>
-							
-							 <p>Set the position from which the prompt will pop up.<br>
-							    In order to set the position you need to 'data-position' specify:
-							    <ul>
-                                	<li><b>top</b>: the tooltip will pop to the up.</li>
-                                	<li><b>left</b>: the tooltip will pop to the left.</li>
-									<li><b>right</b>: the tooltip will pop to the right.</li>
-									<li><b>bottom</b>: the tooltip will pop to the bottom.</li>
-                            </ul>
-
-							<h4>YouTube Video</h4>
-							
-							<p>In order to insert your video from youtube, change the link to it:</p>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="video-container"&gt;
-    &lt;div id="play-video" class="player" data-property="{videoURL: '&lt;!-- Your Link --&gt;' ...&gt;&lt;/div&gt;	
-&lt;/div&gt;
-</code></pre>
-							<h4>Html5 Video</h4>
-							
-							<p>To insert your video, upload your video to the <b>'video'</b> folder:</p>
-							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="html-video-container" data-vide-bg="video/&lt;!-- The name of your video --&gt;.mp4"&gt;&lt;/div&gt;
-</code></pre>
-							
-                        </div>
-
-                        <div id="css" class="main">
-							<hr><br>
-                            <h2>CSS Structure</h2>
-
-                            <div class="file-tree">
-                                <ul>
-                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>css
-                                        <ul>
-											<li><i class="far fa-folder-open" aria-hidden="true"></i>plugins</li>
-                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>bootstrap.css</li>
-                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>font-awesome.css</li>
-											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.animatedheadline.css</li>
-											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>magnific-popup.css</li>
-											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>owl.carousel.min.css</li>
-											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>owl.theme.default.min.css</li>
-											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>simplebar.css</li>
-											<li><i class="far fa-folder-open" aria-hidden="true"></i>setting</li>
-                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>*-color.css</li>
-                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>*-nav.css</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i><b>style-dark.css</b></li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i><b>style-light.css</b></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><br>
-                            <p> <b>style-dark.css</b>: This file is the main CSS file for this template and contains a <b>Dark</b> style.<br>
-								<b>style-light.css</b>: This file is the main CSS file for this template and contains a <b>Light</b> style.<br>
-							</p>
-							
-							<p> <b>(*-color.css)</b>: This files are for choosing highlighed color of you own choice. There are 6 color file in this template.<br><br>
-								<b>(*-nav.css)</b>: These files are intended to select a menu item. This template has 4 menu positions.<br><br>
-								All other <b>css</b> files are designed to maintain the basic functions of this template.<br>
-							</p>
-
-                            <p class="alert alert-danger"><b>Note:</b> Editing these files can cause unexpected behaviour to the template only edit these file if you know what you are doing.</p>
-
-                        </div>
-
-                        <div id="js" class="main">
-							<hr><br>
-                            <h2>Javascript Structure</h2>
-                            <div class="file-tree">
-                                <ul>
-                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>js
-                                        <ul>
-                                            <li><i class="far fa-file-code" aria-hidden="true"></i>jquery.min.js</li>
-                                            <li><i class="far fa-file-code" aria-hidden="true"></i>bootstrap.min.js</li>
-                                            <li><i class="far fa-file-code" aria-hidden="true"></i>isotope.pkgd.min.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>jquery.magnific-popup.min.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>jquery.animatedheadline.min.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>owl.carousel.min.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>jquery.easypiechart.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>jquery.validation.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>simplebar.js</li>
-											<li><i class="far fa-file-code" aria-hidden="true"></i>tilt.js</li>
-                                            <li><i class="far fa-file-code" aria-hidden="true"></i><b>main.js</b></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><br>
-                            <p>
-							<b>main.js</b>: This file is main javascript file for this template.<br>
-                            All other <b>js</b> files contains various js library used in this template.</p>
-                            <p class="alert alert-danger"><b>Note:</b> Editing these files can cause unexpected behaviour to the template only edit these file if you know what you are doing.</p>
-
-                        </div>
-
-                        <div id="fonts" class="main">
-							<hr><br>
-                            <h2>Fonts</h2>
-                            <ul>
-                                <li>Google fonts:
-                                    <ul>
-                                        <li>Poppins</li>
-                                    </ul>
-                                </li>
-                                <li>Icon fonts:
-                                    <ul>
-                                        <li>Font Awesome 5</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div id="source" class="main">
-							<hr><br>
-                            <h2>Sources and Credits</h2>
-
-                            <h3 id="cssandjavascriptslibraries">CSS and Javascripts Libraries</h3>
-
-                            <ul>
-                                <li><a href="https://jquery.com/">jQuery</a></li>
-                                <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
-                                <li><a href="https://fontawesome.com/">FontAwesome 5</a></li>
-								<li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
-								<li><a href="https://isotope.metafizzy.co/">Isotope</a></li>
-								<li><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel 2</a></li>
-								<li><a href="http://grsmto.github.io/simplebar/">SimpleBar</a></li>
-                                <li><a href="https://codyhouse.co/demo/animated-headlines/">Animated Headlines</a></li>
-								<li><a href="https://gijsroge.github.io/tilt.js/">Tilt</a></li>
-								<li><a href="https://github.com/rendro/easy-pie-chart">Easy Pie Chart</a></li>
-                            </ul>
-
-							<br><hr>
-                            <h3 id="images">Images</h3>
-                            <p><b>Images are not included.</b> All images are replaced with the placeholder. Images used in this template can be find at:</p>
-
-                            <ul>
-                                <li><a href="https://www.pexels.com/">Pexels</a></li>
-                                <li><a href="https://www.unsplash.com/">Unsplash</a></li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <p class="alert alert-danger">Thank you again for purchasing this template. If you have additional questions, I will be happy to help you. For any questions, please refer to my page in ThemeForest</p>
-                    </div>
-                </div>
-            </div>
+		<!-- Preloader -->
+		<div id="preloader">
+  			<div class="loading-area">
+    			<div class="circle"></div>
+  			</div>
+  			<div class="left-side"></div>
+  			<div class="right-side"></div>
 		</div>
-        <!--Documentation End-->
 
-        <script src="js/jquery.min.js"></script>
+		<!-- Main Site -->
+		<div id="home">
+  		<div id="about">
+    	<div id="resume">
+     	<div id="portfolio">
+        <div id="blog">
+		<div id="contact">
+
+			<div class="header-mobile">
+                <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                <h2>Baha</h2>
+            </div>
+
+			<!-- Left Block -->
+			<nav class="header-main" data-simplebar>
+
+				<!-- Logo -->
+				<div class="logo">
+            		<img src="img/logo.png" alt="">
+            	</div>
+
+          		<ul>
+					<li data-tooltip="home" data-position="top">
+            			<a href="#home" class="icon-h fas fa-house-damage"></a>
+					</li>
+					<li data-tooltip="about" data-position="top">
+            			<a href="#about" class="icon-a fas fa-user-tie"></a>
+					</li>
+					<li data-tooltip="resume" data-position="top">
+            			<a href="#resume" class="icon-r fas fa-address-book"></a>
+					</li>
+					<li data-tooltip="portfolio" data-position="top">
+            			<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
+					</li>
+					<li data-tooltip="blog" data-position="top">
+            			<a href="#blog" class="icon-b fas fa-receipt"></a>
+					</li>
+					<li data-tooltip="contact" data-position="bottom">
+						<a href="#contact" class="icon-c fas fa-envelope"></a>
+					</li>
+          		</ul>
+
+				<!-- Sound wave -->
+    			<a class="music-bg">
+      				<div class="lines">
+        				<span></span>
+        				<span></span>
+        				<span></span>
+        				<span></span>
+						<span></span>
+						<span></span>
+      				</div>
+					<p> Sound </p>
+    			</a>
+			 </nav>
+
+			<!-- Home Section -->
+          	<div class="pt-home">
+
+				<div class="addition-bg">
+
+					<!-- Fullscreen Slider-->
+					<div class="slide-kenburns-bg">
+						<div class="slide-kenburns slide-kenburns-1"></div>
+						<div class="slide-kenburns slide-kenburns-2"></div>
+						<div class="slide-kenburns slide-kenburns-3"></div>
+					</div>
+				</div>
+
+             	<section>
+
+					<!-- Banner -->
+					<div class="banner">
+  						<h1>Alex Smith</h1>
+						<p class="cd-headline rotate-1">
+							<span>I am a</span>
+							<span class="cd-words-wrapper">
+								<b class="is-visible">Developer</b>
+								<b>Photographer</b>
+								<b>Designer</b>
+								<b>Freelancer</b>
+							</span>
+						</p>
+					</div>
+
+					<!-- Language -->
+					<div class="lang">
+                		<ul>
+                   			<li><a href="#" class="active">eng</a></li>
+                    		<li><a href="#">rus</a></li>
+                		</ul>
+            		</div>
+
+					<!-- Social -->
+					<div class="social">
+            			<ul>
+                			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            			</ul>
+        			</div>
+			  	</section>
+          	</div>
+
+			<!-- About Section -->
+			<div class="page pt-about" data-simplebar>
+				<section class="container">
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>About Me</h2>
+						<span></span>
+					</div>
+
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box-1">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="img/user-photo.jpg">
+										</div>
+									</div>
+									<div class="col-lg-9 col-sm-8">
+										<h4>Alex Smith</h4>
+										<div class="loc">
+											<i class="fas fa-map-marked-alt"></i> New York, USA
+										</div>
+										<p>Hello! I’m Alex Smith a self-taught & award winning Digital Designer & Developer with over five years  work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
+										</p>
+										<p>I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
+										</p>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-award"></i>
+                                     		<div class="desc-icon">
+												<h6>8 Years Job</h6>
+                                            	<p>Experience</p>
+                                       		</div>
+                                		</div>
+                                	</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-certificate"></i>
+                                     		<div class="desc-icon">
+												<h6>500+ Projects</h6>
+                                            	<p>Completed</p>
+                                      		</div>
+                                		</div>
+                                	</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-user-astronaut"></i>
+                                     		<div class="desc-icon">
+												<h6>Freelance</h6>
+                                           		<p>Available</p>
+                                        	</div>
+                                		</div>
+                                	</div>
+									<div class="col-lg-3 col-sm-12 pt-50">
+                                		<a href="#" class="btn-st">Download CV</a>
+                                	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Interests Row Start -->
+					<div class="row mt-100">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>My Interests</h3>
+							</div>
+						</div>
+
+						<div class="col-lg-12 col-sm-12">
+							<div class="box-2">
+								<div class="row">
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                     		<i class="fas fa-music"></i>
+                                    	 	<div class="desc-inter">
+												<h6>Music</h6>
+                               	        	</div>
+										</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                     		<i class="fas fa-route"></i>
+                                     		<div class="desc-inter">
+												<h6>Travelling</h6>
+                                       		</div>
+                                		</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                 	    	<i class="far fa-image"></i>
+                                  		   	<div class="desc-inter">
+												<h6>Photos</h6>
+                                  	     	</div>
+                                		</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                    	 	<i class="fas fa-film"></i>
+                                     		<div class="desc-inter">
+												<h6>Movies</h6>
+                                   	    	</div>
+                                		</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                 	    	<i class="fas fa-space-shuttle"></i>
+                                 	    	<div class="desc-inter">
+												<h6>Space</h6>
+                                	       	</div>
+                                		</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                    	 	<i class="fas fa-book"></i>
+                                     		<div class="desc-inter">
+												<h6>Books</h6>
+                                    	   	</div>
+                                		</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+        	                             	<i class="fas fa-gamepad"></i>
+            	                         	<div class="desc-inter">
+												<h6>Video games</h6>
+                    	                   	</div>
+                        	        	</div>
+									</div>
+
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+        	                             	<i class="fas fa-tree"></i>
+            	                         	<div class="desc-inter">
+												<h6>Forest</h6>
+                    	                   	</div>
+                        	        	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Service Row Start -->
+					<div class="row mt-100">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Services</h3>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-1 mb-40">
+								<i class="fas fa-desktop"></i>
+								<h4>Web Design</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-2 mb-40">
+								<i class="fas fa-cogs"></i>
+								<h4>Web Development</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-2 mb-40">
+								<i class="fas fa-mobile-alt"></i>
+								<h4>Responsive Design</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-1 mb-40">
+								<i class="fas fa-medkit"></i>
+								<h4>quick Support</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Row Start -->
+					<div class="row testimonial mt-60">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Testimonials</h3>
+							</div>
+						</div>
+
+						<div class="owl-carousel owl-theme">
+
+							<!-- Testimonail Item -->
+							<div class="testimonial-item">
+								<div class="media">
+									<img src="img/testimonials/testimonial-1.jpg" alt="">
+									<div class="content">
+										<h4>John Doe</h4>
+										<p>Web Development</p>
+									</div>
+									<ul class="rating">
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+                                 	</ul>
+								</div>
+								<div class="comment pt-30">
+									<p>
+										Curabitur eleifend tempor gnceleris eget placeratvel phasellus eget
+										sem just metup consequat gestas facilisis eleifend posure tempor
+										metus sem just metup consequat gestas facilisis eleifend posures
+										temporureture.
+									</p>
+								</div>
+							</div>
+
+							<!-- Testimonail Item -->
+							<div class="testimonial-item">
+								<div class="media">
+									<img src="img/testimonials/testimonial-2.jpg" alt="">
+									<div class="content">
+										<h4>Alex Doe</h4>
+										<p>UI/UX Designer</p>
+									</div>
+									<ul class="rating">
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star-half"></i></li>
+                                 	</ul>
+								</div>
+								<div class="comment pt-30">
+									<p>
+										Curabitur eleifend tempor gnceleris eget placeratvel phasellus eget
+										sem just metup consequat gestas facilisis eleifend posure tempor
+										metus sem just metup consequat gestas facilisis eleifend posures
+										temporureture.
+									</p>
+								</div>
+							</div>
+
+							<!-- Testimonail Item -->
+							<div class="testimonial-item">
+								<div class="media">
+									<img src="img/testimonials/testimonial-3.jpg" alt="">
+									<div class="content">
+										<h4>David Doe</h4>
+										<p>UI/UX Designer</p>
+									</div>
+									<ul class="rating">
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+                                 	</ul>
+								</div>
+								<div class="comment pt-30">
+									<p>
+										Curabitur eleifend tempor gnceleris eget placeratvel phasellus eget
+										sem just metup consequat gestas facilisis eleifend posure tempor
+										metus sem just metup consequat gestas facilisis eleifend posures
+										temporureture.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Price Row Start -->
+					<div class="row mt-100 mb-60">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-90">
+								<h3>Price</h3>
+							</div>
+						</div>
+
+						<!-- Price Item -->
+						<div class="col-lg-4 col-sm-12">
+							<div class="price box-1">
+								<div class="head-price">
+									<i class="fa fa-user"></i>
+									<h4>Basic</h4>
+								</div>
+								<div class="body-price">
+									<div class="price-plan">
+										<span class="currency">$</span>
+										<span class="number">25</span>
+										<span class="period">month</span>
+									</div>
+									<div class="list-price">
+										<ul>
+											<li>Web Design</li>
+											<li>Web Development</li>
+											<li class="disable">Responsive Design</li>
+											<li class="disable">Game Development</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer-price">
+									<a href="#" class="btn-st">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Price Item -->
+						<div class="col-lg-4 col-sm-12">
+							<div class="price box-2">
+								<div class="head-price">
+									<i class="fa fa-briefcase"></i>
+									<h4>Standard</h4>
+								</div>
+								<div class="body-price">
+									<div class="price-plan">
+										<span class="currency">$</span>
+										<span class="number">40</span>
+										<span class="period">month</span>
+									</div>
+									<div class="list-price">
+										<ul>
+											<li>Web Design</li>
+											<li>Web Development</li>
+											<li>Responsive Design</li>
+											<li class="disable">Game Development</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer-price">
+									<a href="#" class="btn-st">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Price Item -->
+						<div class="col-lg-4 col-sm-12">
+							<div class="price box-1">
+								<div class="head-price">
+									<i class="fa fa-globe"></i>
+									<h4>Premium</h4>
+								</div>
+								<div class="body-price">
+									<div class="price-plan">
+										<span class="currency">$</span>
+										<span class="number">55</span>
+										<span class="period">month</span>
+									</div>
+									<div class="list-price">
+										<ul>
+											<li>Web Design</li>
+											<li>Web Development</li>
+											<li>Responsive Design</li>
+											<li>Game Development</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer-price">
+									<a href="#" class="btn-st">Buy Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+         	</div>
+
+			<!-- Resume Section -->
+          	<div class="page pt-resume" data-simplebar>
+            	<section class="container">
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Resume</h2>
+    					<span></span>
+					</div>
+
+					<!-- Experience & Education Row Start -->
+					<div class="row mt-100">
+
+						<!-- Experience Column Start -->
+						<div class="col-lg-6 col-sm-12">
+
+							<!-- Header Block -->
+							<div class="header-box mb-50">
+								<h3>Experience</h3>
+							</div>
+
+							<div class="experience box-1">
+
+								<!-- Experience Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Web Design</h4>
+										<p><i class="far fa-calendar-alt"></i>2012 - 2014 | Сompany Inc</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+
+								<!-- Experience Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Fornt-End Developer</h4>
+										<p><i class="far fa-calendar-alt"></i>2014 - 2015 | Сompany Inc</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+
+								<!-- Experience Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Web Development</h4>
+										<p><i class="far fa-calendar-alt"></i>2015 - 2019 | Сompany Inc</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Education Column Start -->
+						<div class="col-lg-6 col-sm-12">
+
+							<!-- Header Block -->
+							<div class="header-box mb-50 mob-box-mt">
+								<h3>Education</h3>
+							</div>
+
+							<div class="experience box-2">
+
+								<!-- Education Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Phd</h4>
+										<p><i class="far fa-calendar-alt"></i>2011 - 2013 | Computer Science</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+
+								<!-- Education Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Post Graduation</h4>
+										<p><i class="far fa-calendar-alt"></i>2013 - 2016 | Computer Science</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+
+								<!-- Education Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Gradution</h4>
+										<p><i class="far fa-calendar-alt"></i>2016 - 2018 | Computer Science</p>
+									</div>
+									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Skills Row Start -->
+					<div class="row mt-100">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Skills</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-1 skills">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">HTML5</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:98%">
+											<div class="progress-value">98%</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">CSS3</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:85%">
+											<div class="progress-value">85%</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">JavaScript</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:90%">
+											<div class="progress-value">90%</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">UI/UX designer</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:77%">
+											<div class="progress-value">77%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="row">
+
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="80" data-bar-color="#fff"> 80% <p>PHP</p></div>
+									</div>
+
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="70" data-bar-color="#fff"> 70% <p>Illustrator</p></div>
+									</div>
+
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="60" data-bar-color="#fff"> 60% <p>Photoshop</p></div>
+									</div>
+
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="90" data-bar-color="#fff"> 90% <p>AngularJS</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Work Process Row Start -->
+					<div class="row mt-100">
+
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>My Working Process</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-2 work-process mb-100">
+						<div class="row">
+							<div class="col-lg-4 col-sm-12 ltr">
+
+                    			<!-- Working Process Item-->
+                          	 	<div class="single-wp width-sm process-1">
+									<p class="wp-step">01</p>
+									<h4 class="wp-title">Discuss idea</h4>
+									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
+								</div>
+
+								<!-- Working Process Item-->
+								<div class="single-wp width-sm process-2">
+									<p class="wp-step">02</p>
+									<h4 class="wp-title">Creative concept</h4>
+									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 hidden-sm">
+
+								<!-- Working Process Circle-->
+								<div class="wp-circle">
+									<h4>Working Process</h4>
+									<span class="dots top-l"></span>
+									<span class="dots bottom-l"></span>
+									<span class="dots top-r"></span>
+									<span class="dots bottom-r"></span>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-sm-12 rtl">
+
+								<!-- Working Process Item-->
+								<div class="single-wp width-sm process-3">
+									<p class="wp-step">03</p>
+									<h4 class="wp-title">Web concept</h4>
+									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
+								</div>
+
+								<!-- Working Process Item-->
+								<div class="single-wp width-sm process-4">
+									<p class="wp-step">04</p>
+									<h4 class="wp-title">Final concept</h4>
+									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+         	</div>
+
+			<!-- Portfolio Section -->
+          	<div class="page pt-portfolio" data-simplebar>
+            	<section class="container">
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Portfolio</h2>
+    					<span></span>
+					</div>
+
+					<!-- Portfolio Filter Row Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12 portfolio-filter">
+							<ul>
+								<li class="active" data-filter="*">All</li>
+								<li data-filter=".brand">Brand</li>
+								<li data-filter=".design">Design</li>
+								<li data-filter=".graphic">Graphic</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Portfolio Item Row Start -->
+					<div class="row portfolio-items mt-100 mb-100">
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 graphic">
+							<figure>
+								<img alt="" src="img/portfolio/img-1.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Graphic</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-1.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 design">
+							<figure>
+								<img alt="" src="img/portfolio/img-2.jpg">
+									<figcaption>
+									<h3>Project Name</h3>
+									<p>Design</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-2.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 brand">
+							<figure>
+								<img alt="" src="img/portfolio/img-3.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Graphic</p><i class="fas fa-video"></i>
+									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 graphic">
+							<figure>
+								<img alt="" src="img/portfolio/img-4.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Design</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-4.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 design">
+							<figure>
+								<img alt="" src="img/portfolio/img-5.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Design</p><i class="fas fa-video"></i>
+									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 brand">
+							<figure>
+								<img alt="" src="img/portfolio/img-6.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Brand</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-6.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 graphic">
+							<figure>
+								<img alt="" src="img/portfolio/img-7.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Brand</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-7.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 design">
+							<figure>
+								<img alt="" src="img/portfolio/img-8.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Brand</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 brand">
+							<figure>
+								<img alt="" src="img/portfolio/img-9.jpg">
+								<figcaption>
+									<h3>Project Name</h3>
+									<p>Graphic</p><i class="fas fa-image"></i>
+									<a class="image-link" href="img/portfolio/img-9.jpg"></a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</section>
+       	   	</div>
+			 <!-- Blog Section -->
+          	<div class="page pt-blog" data-simplebar>
+            	<section class="container">
+
+					<!-- Section Title -->
+             		<div class="header-page mt-70 mob-mt">
+						<h2>Blog</h2>
+    					<span></span>
+					</div>
+
+					<!-- Blog Row Start -->
+					<div class="row blog-masonry mt-100 mb-50">
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-1.jpg"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+                            		<li><a href="#">15 April 2019</a></li>
+                            		<li><a href="#">Lifestyle</a></li>
+                           		</ul>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-2.jpg"></a>
+									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+                            		<li><a href="#">10 March 2019</a></li>
+                            		<li><a href="#">Lifestyle</a></li>
+                           		</ul>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-3.jpg"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+                            		<li><a href="#">02 March 2019</a></li>
+                            		<li><a href="#">Work</a></li>
+                            	</ul>
+								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-4.jpg"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+                            		<li><a href="#">29 March 2019</a></li>
+                            		<li><a href="#">Career</a></li>
+                            	</ul>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-5.jpg"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+									<li><a href="#">14 April 2019</a></li>
+                            		<li><a href="#">Lifestyle</a></li>
+                            	</ul>
+								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Blog Item -->
+						<div class="col-lg-4 col-sm-6">
+							<div class="blog-item">
+								<div class="thumbnail">
+									<a href="single-blog.html"><img alt="" src="img/blog/img-6.jpg"></a>
+									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
+								</div>
+								<h4><a href="single-blog.html">Road to success</a></h4>
+								<ul>
+                           		 	<li><a href="#">29 April 2019</a></li>
+                           		 	<li><a href="#">Career</a></li>
+                        	    </ul>
+								<div class="blog-btn">
+									<a href="single-blog.html" class="btn-st">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-100 mb-90">
+						<div class="col-lg-12 col-sm-12 text-center">
+							<a href="blog-list.html" class="btn-st">My Blog</a>
+						</div>
+					</div>
+
+            	</section>
+			</div>
+
+			<!-- Contact Section -->
+         	<div class="page pt-contact" data-simplebar>
+            	<section class="container">
+
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2>Contact</h2>
+    					<span></span>
+					</div>
+
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact-form ">
+                        		<form method="post" class="box-1 contact-valid" id="contact-form">
+									<div class="row">
+                            			<div class="col-lg-6 col-sm-12">
+                                			<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
+                            			</div>
+                            			<div class="col-lg-6 col-sm-12">
+                                			<input type="email" name="email" id="email" class="form-control" placeholder="Email *">
+                            			</div>
+                            			<div class="col-lg-12 col-sm-12">
+                                			<textarea class="form-control" name="note"  id="note" placeholder="Your Message"></textarea>
+                            			</div>
+                             			<div class="col-lg-12 col-sm-12 text-center">
+                                			<button type="submit" class="btn-st">Send Message</button>
+                                			<div id="loader">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+
+					<!-- Contact Info -->
+					<div class="box-2 contact-info">
+						<div class="row">
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-paper-plane"></i>
+         						<p>example@example.com</p>
+          						<span>Email</span>
+							</div>
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-map-marker-alt"></i>
+         						<p>123 Lorem Ipsum, USA</p>
+          						<span>Addres</span>
+							</div>
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-phone"></i>
+         						<p>(+1) 123 456 7890</p>
+          						<span>Phone</span>
+							</div>
+						</div>
+					</div>
+
+					<!--Google Map Start-->
+					<div class="google-map box-1 mt-100 mb-100">
+						<div class="row">
+							<div class="col-lg-12">
+								<div id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14"></div>
+							</div>
+						</div>
+					</div>
+            	</section>
+          	</div>
+
+        </div>
+      	</div>
+    	</div>
+  		</div>
+		</div>
+		</div>
+
+		<!-- All Script -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/prettify.js"></script>
+		<script src="js/simplebar.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.animatedheadline.min.js"></script>
+		<script src="js/jquery.easypiechart.js"></script>
+		<script src="js/jquery.validation.js"></script>
+		<script src="js/tilt.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
     </body>
 </html>
